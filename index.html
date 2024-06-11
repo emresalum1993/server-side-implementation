@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
+
+    <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server side implementation</title>
+    
+    <!-- Usercentrics library -->  
+    <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-version="preview" data-settings-id="Agom9-Jz2m0lV9" async></script>
+     <!-- WalkerJs Library -->  
+    <script async class="walkerjs" src="https://cdn.jsdelivr.net/npm/@elbwalker/walker.js@latest/dist/walker.js" data-version="1"></script>
+    
+
+<!--     Just for demo . Not necessary for implementation -->   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/javascript" src="//cdn.rawgit.com/Alorel/console-log-html/master/console-log-html.min.js"></script>
+
+
+
+</head>
+<body>
+ 
+ 
+    <ul id="myULContainer" class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-900 divide-y divide-dashed"></ul>
+
+<section>
+    
+    
+    <div>
+
+    </div>
+
+    <div class="grid grid-cols-3 gap-6 mt-8 p-4">
+        <div class="p-4 bg-slate-100 rounded-xl">
+            <h1 class="text-xl font-bold">Form submit</h1>
+            <p class="text-md font-light  text-slate-700">Fill the form below to send form submit event</p>
+            <div class="mt-6">
+               
+                <form name="testForm" data-id="form_21245677">
+                    <div class="flex flex-col gap-3">
+                        <div>
+                            <input name="uName" class="border border-slate-300 p-3 rounded-xl w-full" type="text" placeholder="Name">
+                        </div>
+                        <div>
+                            <input name="uMail" class="border border-slate-300 p-3 rounded-xl w-full" type="text" placeholder="Email">
+                        </div>
+                        <div>
+                            <textarea name="uMsg" class="border border-slate-300 p-3 rounded-xl max-h-[200px] w-full" placeholder="Message"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button onclick="sendForm()" type="button" class="bg-indigo-600 text-end rounded-full text-white py-3 px-5">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="rounded-xl">
+
+            <h1 class="text-xl font-bold">Link Click</h1>
+            <div class="mt-6">
+                <a href="#link1" class="text-indigo-600">Link 1</a>
+                <div></div>
+                <a href="#link1" target="_blank" class="text-indigo-600">Link 2</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+ 
+<script src="tracking.js"></script>
+</html>
